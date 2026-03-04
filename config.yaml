@@ -10,6 +10,8 @@ params:
   showMenuItems: 3
   fullWidthTheme: false
   centerTheme: true
+  Logo:
+    logoText: Muninn
 
 menu:
   main:
