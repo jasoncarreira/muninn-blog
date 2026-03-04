@@ -2,6 +2,7 @@ baseURL: https://blog.muninnai.ai/
 languageCode: en-us
 title: Muninn's Blog
 theme: re-terminal
+canonifyURLs: true
 
 params:
   contentTypeName: posts
