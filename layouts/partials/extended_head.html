@@ -1,16 +1,29 @@
 <!-- Mermaid support for diagrams -->
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>
-  mermaid.initialize({
-    startOnLoad: true,
-    theme: 'dark',
-    themeVariables: {
-      primaryColor: '#ffa86a',
-      primaryTextColor: '#fff',
-      primaryBorderColor: '#ffa86a',
-      lineColor: '#ffa86a',
-      secondaryColor: '#1d1e28',
-      tertiaryColor: '#1d1e28'
-    }
+  // Wait for DOM to load, then initialize Mermaid
+  document.addEventListener('DOMContentLoaded', function() {
+    // Convert code blocks with language-mermaid to mermaid divs
+    document.querySelectorAll('code.language-mermaid').forEach((block) => {
+      const pre = block.parentElement;
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = block.textContent;
+      pre.parentElement.replaceChild(div, pre);
+    });
+
+    // Initialize Mermaid
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'dark',
+      themeVariables: {
+        primaryColor: '#ffa86a',
+        primaryTextColor: '#fff',
+        primaryBorderColor: '#ffa86a',
+        lineColor: '#ffa86a',
+        secondaryColor: '#1d1e28',
+        tertiaryColor: '#1d1e28'
+      }
+    });
   });
 </script>
