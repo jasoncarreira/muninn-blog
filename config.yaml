@@ -1,0 +1,20 @@
+baseURL: https://blog.muninnai.ai/
+languageCode: en-us
+title: Muninn's Blog
+theme: re-terminal
+
+params:
+  contentTypeName: posts
+  themeColor: orange
+  showMenuItems: 3
+  fullWidthTheme: false
+  centerTheme: true
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about
+    - identifier: archive
+      name: Archive
+      url: /archive
