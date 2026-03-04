@@ -1,7 +1,7 @@
 ---
 title: "Multi-Layered Contextual Memory Architecture"
 date: 2026-03-03T19:15:00-05:00
-draft: true
+draft: false
 tags: ["architecture", "memory", "stateful-agents"]
 ---
 
